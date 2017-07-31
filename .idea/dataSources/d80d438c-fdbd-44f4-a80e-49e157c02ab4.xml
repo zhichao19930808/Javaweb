@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.3">
+    <root id="1"/>
+    <schema id="2" parent="1" name="db_1702">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="db_dict"/>
+    <schema id="4" parent="1" name="db_e177"/>
+    <schema id="5" parent="1" name="db_e178"/>
+    <schema id="6" parent="1" name="db_gg">
+      <Visible>1</Visible>
+    </schema>
+    <schema id="7" parent="1" name="db_javaee"/>
+    <schema id="8" parent="1" name="db_jianshu"/>
+    <schema id="9" parent="1" name="db_students"/>
+    <schema id="10" parent="1" name="db_test"/>
+    <schema id="11" parent="1" name="db_user"/>
+    <schema id="12" parent="1" name="db_work"/>
+    <schema id="13" parent="1" name="information_schema"/>
+    <schema id="14" parent="1" name="ip"/>
+    <schema id="15" parent="1" name="library"/>
+    <schema id="16" parent="1" name="mysql"/>
+    <schema id="17" parent="1" name="performance_schema"/>
+    <schema id="18" parent="1" name="scott"/>
+    <schema id="19" parent="1" name="test"/>
+    <schema id="20" parent="1" name="db_bank">
+      <Visible>1</Visible>
+    </schema>
+    <table id="21" parent="2" name="alter_study"/>
+    <table id="22" parent="2" name="ip"/>
+    <table id="23" parent="2" name="t_student"/>
+    <table id="24" parent="6" name="account">
+      <Comment>用户表</Comment>
+    </table>
+    <table id="25" parent="6" name="hobby">
+      <Comment>客户爱好</Comment>
+    </table>
+    <table id="26" parent="6" name="information">
+      <Comment>客户信息表</Comment>
+    </table>
+    <routine id="27" parent="6" name="add">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <routine id="28" parent="6" name="reg">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <table id="29" parent="20" name="data">
+      <Comment>用户资料</Comment>
+    </table>
+    <table id="30" parent="20" name="purse">
+      <Comment>用户钱包</Comment>
+    </table>
+    <table id="31" parent="20" name="reputation">
+      <Comment>用户信誉</Comment>
+    </table>
+    <table id="32" parent="20" name="user">
+      <Comment>用户表</Comment>
+    </table>
+    <column id="33" parent="21" name="id">
+      <Position>1</Position>
+      <Comment>id pk</Comment>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="34" parent="21" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="35" parent="21" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="36" parent="22" name="id">
+      <Position>1</Position>
+      <Comment>ID pk</Comment>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="37" parent="22" name="min">
+      <Position>2</Position>
+      <Comment>起始IP地址</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="38" parent="22" name="max">
+      <Position>3</Position>
+      <Comment>终止IP地址</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="39" parent="22" name="geo">
+      <Position>4</Position>
+      <Comment>地理位置</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="40" parent="22" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="41" parent="23" name="id">
+      <Position>1</Position>
+      <Comment>学号</Comment>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="42" parent="23" name="name">
+      <Position>2</Position>
+      <Comment>姓名</Comment>
+      <DataType>varchar(4)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="43" parent="23" name="gender">
+      <Position>3</Position>
+      <Comment>性别</Comment>
+      <DataType>char(1)|0</DataType>
+    </column>
+    <column id="44" parent="23" name="age">
+      <Position>4</Position>
+      <Comment>年龄</Comment>
+      <DataType>int(10) unsigned|0</DataType>
+    </column>
+    <column id="45" parent="23" name="height">
+      <Position>5</Position>
+      <Comment>身高</Comment>
+      <DataType>double(3,2)|0</DataType>
+    </column>
+    <column id="46" parent="23" name="weight">
+      <Position>6</Position>
+      <Comment>体重</Comment>
+      <DataType>double(3,1)|0</DataType>
+    </column>
+    <column id="47" parent="23" name="time">
+      <Position>7</Position>
+      <Comment>入学时间</Comment>
+      <DataType>date|0</DataType>
+    </column>
+    <column id="48" parent="23" name="price">
+      <Position>8</Position>
+      <Comment>学费</Comment>
+      <DataType>decimal(6,2)|0</DataType>
+    </column>
+    <column id="49" parent="23" name="intro">
+      <Position>9</Position>
+      <Comment>简介</Comment>
+      <DataType>text|0</DataType>
+    </column>
+    <key id="50" parent="23" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="51" parent="24" name="id">
+      <Position>1</Position>
+      <Comment>pk id</Comment>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="52" parent="24" name="name">
+      <Position>2</Position>
+      <Comment>账号</Comment>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="53" parent="24" name="password">
+      <Position>3</Position>
+      <DataType>varchar(40)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="54" parent="24" name="name">
+      <ColNames>name</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="55" parent="24" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="56" parent="24" name="name">
+      <ColNames>name</ColNames>
+      <UnderlyingIndexName>name</UnderlyingIndexName>
+    </key>
+    <column id="57" parent="25" name="id">
+      <Position>1</Position>
+      <Comment>id</Comment>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="58" parent="25" name="accountId">
+      <Position>2</Position>
+      <Comment>外键</Comment>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="59" parent="25" name="hobbyName">
+      <Position>3</Position>
+      <Comment>爱好</Comment>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="60" parent="25" name="accountId">
+      <ColNames>accountId</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="61" parent="25" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="62" parent="25" name="accountId">
+      <ColNames>accountId</ColNames>
+      <UnderlyingIndexName>accountId</UnderlyingIndexName>
+    </key>
+    <foreign-key id="63" parent="25" name="fk_hobby_accountId">
+      <ColNames>accountId</ColNames>
+      <RefSchemaName>db_gg</RefSchemaName>
+      <RefTableName>account</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="64" parent="26" name="id">
+      <Position>1</Position>
+      <Comment>pk id</Comment>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="65" parent="26" name="accountId">
+      <Position>2</Position>
+      <Comment>外键</Comment>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="66" parent="26" name="nickName">
+      <Position>3</Position>
+      <Comment>昵称</Comment>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="67" parent="26" name="phone">
+      <Position>4</Position>
+      <Comment>电话</Comment>
+      <DataType>varchar(40)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="68" parent="26" name="email">
+      <Position>5</Position>
+      <Comment>邮箱</Comment>
+      <DataType>varchar(40)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="69" parent="26" name="fk_information_accountId">
+      <ColNames>accountId</ColNames>
+    </index>
+    <key id="70" parent="26" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="71" parent="26" name="fk_information_accountId">
+      <ColNames>accountId</ColNames>
+      <RefSchemaName>db_gg</RefSchemaName>
+      <RefTableName>account</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <argument id="72" parent="27" name="uname">
+      <DataType>varchar(20)|0</DataType>
+    </argument>
+    <argument id="73" parent="27" name="upassword">
+      <DataType>varchar(20)|0</DataType>
+    </argument>
+    <argument id="74" parent="27" name="message">
+      <ArgumentDirection>O</ArgumentDirection>
+      <DataType>char(10)|0</DataType>
+    </argument>
+    <argument id="75" parent="28" name="uname">
+      <DataType>varchar(20)|0</DataType>
+    </argument>
+    <argument id="76" parent="28" name="upassword">
+      <DataType>varchar(20)|0</DataType>
+    </argument>
+    <argument id="77" parent="28" name="message">
+      <ArgumentDirection>O</ArgumentDirection>
+      <DataType>char(10)|0</DataType>
+    </argument>
+    <column id="78" parent="29" name="id">
+      <Position>1</Position>
+      <Comment>id pk</Comment>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="79" parent="29" name="userId">
+      <Position>2</Position>
+      <Comment>用户id</Comment>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="80" parent="29" name="birthdate">
+      <Position>3</Position>
+      <Comment>出生日期</Comment>
+      <DataType>date|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="81" parent="29" name="gender">
+      <Position>4</Position>
+      <Comment>性别</Comment>
+      <DataType>char(1)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="82" parent="29" name="profession">
+      <Position>5</Position>
+      <Comment>职业</Comment>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="83" parent="29" name="userId">
+      <ColNames>userId</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="84" parent="29" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="85" parent="29" name="userId">
+      <ColNames>userId</ColNames>
+      <UnderlyingIndexName>userId</UnderlyingIndexName>
+    </key>
+    <foreign-key id="86" parent="29" name="data_fk_userId">
+      <ColNames>userId</ColNames>
+      <RefSchemaName>db_bank</RefSchemaName>
+      <RefTableName>user</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="87" parent="30" name="id">
+      <Position>1</Position>
+      <Comment>pk id</Comment>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="88" parent="30" name="userId">
+      <Position>2</Position>
+      <Comment>用户id</Comment>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="89" parent="30" name="money">
+      <Position>3</Position>
+      <Comment>余额</Comment>
+      <DataType>decimal(10)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <index id="90" parent="30" name="userId">
+      <ColNames>userId</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="91" parent="30" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="92" parent="30" name="userId">
+      <ColNames>userId</ColNames>
+      <UnderlyingIndexName>userId</UnderlyingIndexName>
+    </key>
+    <foreign-key id="93" parent="30" name="purse_fk_userId">
+      <ColNames>userId</ColNames>
+      <RefSchemaName>db_bank</RefSchemaName>
+      <RefTableName>user</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="94" parent="31" name="id">
+      <Position>1</Position>
+      <Comment>pk id</Comment>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="95" parent="31" name="userId">
+      <Position>2</Position>
+      <Comment>用户id</Comment>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="96" parent="31" name="grade">
+      <Position>3</Position>
+      <Comment>信誉度</Comment>
+      <DataType>varchar(10)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;良&apos;</DefaultExpression>
+    </column>
+    <index id="97" parent="31" name="userId">
+      <ColNames>userId</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="98" parent="31" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="99" parent="31" name="userId">
+      <ColNames>userId</ColNames>
+      <UnderlyingIndexName>userId</UnderlyingIndexName>
+    </key>
+    <foreign-key id="100" parent="31" name="reputation_pk_userId">
+      <ColNames>userId</ColNames>
+      <RefSchemaName>db_bank</RefSchemaName>
+      <RefTableName>user</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="101" parent="32" name="id">
+      <Position>1</Position>
+      <Comment>id pk</Comment>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="102" parent="32" name="userName">
+      <Position>2</Position>
+      <Comment>用户名</Comment>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="103" parent="32" name="password">
+      <Position>3</Position>
+      <Comment>密码</Comment>
+      <DataType>varchar(40)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="104" parent="32" name="identity">
+      <Position>4</Position>
+      <Comment>身份</Comment>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;客户&apos;</DefaultExpression>
+    </column>
+    <key id="105" parent="32" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

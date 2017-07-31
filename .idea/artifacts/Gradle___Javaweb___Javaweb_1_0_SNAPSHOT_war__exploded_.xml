@@ -1,0 +1,29 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" external-system-id="GRADLE" name="Gradle : Javaweb : Javaweb-1.0-SNAPSHOT.war (exploded)">
+    <output-path>$PROJECT_DIR$/build/libs/exploded/Javaweb-1.0-SNAPSHOT.war</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$">
+        <manifest>TWFuaWZlc3QtVmVyc2lvbjogMS4wDQoNCg==</manifest>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/build/libs/exploded/Javaweb-1.0-SNAPSHOT.war/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="Javaweb_main/web/Web Gradle : Javaweb-1.0-SNAPSHOT.war" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Javaweb_main" />
+          <element id="dir-copy" path="$PROJECT_DIR$/out/production/resources" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Gradle: mysql:mysql-connector-java:5.1.42" />
+          <element id="library" level="project" name="Gradle: commons-dbcp:commons-dbcp:1.4" />
+          <element id="library" level="project" name="Gradle: commons-pool:commons-pool:1.6" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/c3p0/c3p0/0.9.1.2/4ea71601f844c4b90d22195bbdb58979281bb8b6/c3p0-0.9.1.2.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-dbutils/commons-dbutils/1.7/a2d6e515aa87e5d38f6b3003e70b13c1b1f19ca0/commons-dbutils-1.7.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
