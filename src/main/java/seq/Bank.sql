@@ -80,7 +80,7 @@ INSERT INTO db_bank.reputation (userId, grade) VALUES (1, '优');
 SELECT d.userId,u.userName,u.password,d.birthdate,d.gender,d.profession,p.money,r.grade
 FROM db_bank.user u INNER JOIN db_bank.data d INNER JOIN db_bank.purse p INNER JOIN db_bank.reputation r
 ON u.id = d.userId =p.userId=r.userId;
-SELECT db_bank.data.userId,db_bank.user.userName,db_bank.user.password,db_bank.data.birthdate,db_bank.data.gender,db_bank.data.profession,
-  purse.money,db_bank.reputation.grade
-FROM db_bank.user INNER JOIN db_bank.data INNER JOIN db_bank.purse INNER JOIN db_bank.reputation
-ON db_bank.user.id = db_bank.data.userId =db_bank.purse.userId=db_bank.reputation.userId;
+
+select * from db_gg.account;
+
+update db_gg.account set name = 'tom' where id = 1
